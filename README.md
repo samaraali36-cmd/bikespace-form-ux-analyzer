@@ -1,16 +1,42 @@
-# React + Vite
+# BikeSpace Form UX Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight product analytics prototype that diagnoses form submission friction in a civic issue-reporting flow.
 
-Currently, two official plugins are available:
+## Problem
+Users often drop off before completing issue-reporting forms (e.g., bike parking reports), reducing engagement and data quality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Approach
+Instead of analyzing raw analytics dashboards, this prototype translates simple UX signals into structured product insights.
 
-## React Compiler
+Inputs:
+- drop-off step
+- device type
+- friction indicators (UX issues)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Outputs:
+- prioritized UX problems
+- recommended improvements
+- a 1-week execution plan
 
-## Expanding the ESLint configuration
+## Example
+If users drop off at the map step on mobile with "map confusing" and "too many fields":
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The tool identifies:
+- location selection friction (high priority)
+- high input burden on mobile (medium priority)
+- unclear progression (high priority)
+
+## Tech Stack
+- React (Vite)
+- JavaScript
+
+## What This Demonstrates
+- Product analytics thinking
+- UX problem decomposition
+- Prioritization of fixes
+- Translating insights into execution
+
+## Next Steps
+- AI-generated recommendations
+- integration with real user data
+- dashboard-based analytics
